@@ -1,0 +1,95 @@
+
+.content-title.diary {
+    flex: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    margin: 10px 15px 0px 15px;
+    border-bottom: 1px solid black;
+}
+
+
+/*다이어리 컨텐츠*/
+.row2-diary {
+    flex: none;
+    height: 440px;
+    padding: 6px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+/*row2-photo 속 아이템들*/
+.diary-instr {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+.diary-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px;
+}
+.diary-date {
+    font-size: 0.7rem;
+    align-items: end;
+    line-height: 200%;
+    padding: 10px;
+}
+.photo-diary {
+    border-bottom: 1px solid lightgray;
+    padding: 15px 15px 70px 15px;
+    margin: 15px 0 0px 0;
+    font-size: 0.9rem;
+    line-height: 150%;
+}
+/*communication 기능*/
+.communication {
+    font-size: 1.4rem;
+    margin: 10px 0 30px 8px;
+}
+.communication i {
+    margin: 3px;
+}
+.communication .communication-system {
+    font-size: 0.9rem;
+    margin: 5px 5px 10px 5px;
+}
+.communication-comment {
+    display: inline-block;
+    padding: 9px 11px;
+    margin: 5px auto;
+    font-size: 0.9rem;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+}
+.communication-comment.recomment {
+    margin-left: 24px;
+}
+/*비밀 일기 버튼
+.secret-button:hover {
+    display: inline-block;
+    transition: all 300ms; 
+    background-color: black; 
+    border-radius: 10px; 
+    color: white; 
+    padding: 10px 12px; 
+    font-size: 0.9rem;
+    cursor: pointer;  
+    margin: 0 130px;
+    font-weight: bold;
+}
+.secret-button:active {
+    transition: all;
+    transition-duration: 400ms;
+    border-color: black;
+    background-color: white;
+    color: black;
+}*/
+#secret-box {
+    display: none;
+}
+

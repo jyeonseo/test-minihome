@@ -1,0 +1,60 @@
+.content-title.diary {
+    flex: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 10px 0 10px 0;
+    margin: 10px 15px 0px 15px;
+    border-bottom: 1px solid black;
+
+}
+
+
+/*다이어리 컨텐츠*/
+.row2-diary {
+    flex: none;
+    height: 440px;
+    padding: 6px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+/*row2-photo 속 아이템들*/
+.visitors {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+.visits-pic {
+    flex: 1;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.visits-comment {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.diary-date {
+    flex: 0.5;
+    font-size: 0.7rem;
+    text-align: end;
+    line-height: 200%;
+    padding: 10px;
+}
+.visitor-messege {
+    display: inline-block;
+    flex: 4;
+    padding: 15px 15px 15px 15px;
+
+    font-size: 0.9rem;
+    line-height: 150%;
+}
+
+

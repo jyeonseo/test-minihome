@@ -1,0 +1,96 @@
+
+/*main-container .box에 있는 아이템: row1(content-title, content(menu-icon, news-title)), row2(content-title) */
+.row1 {
+    flex: 3;
+    padding: 6px;
+    margin: 10px;
+}
+.row2 {
+    flex: 7;
+    padding: 6px;
+    margin: 10px;
+}
+
+/*row2 속 아이템들*/
+.content-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 6px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: rgb(0, 0, 0);
+}
+.row1-1 {
+    
+    display: flex;
+    flex-direction: row;
+}
+.content {
+    flex: 5.5;
+    margin-right: 90px;
+}
+.visitors {
+    flex: 8;
+    font-size: 0.75rem;
+}
+.album-menu-icon {
+    display: inline-block;
+    background-color: rgb(255, 30, 30);
+    border-radius: 10%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    padding: 2px;
+}
+.diary-menu-icon {
+    display: inline-block;
+    background-color: rgb(80, 80, 80);
+    border-radius: 10%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    padding: 2px;
+}
+.new-menu-icon {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    padding: 2px 3px 2px 3px;
+}
+.news-title {
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+/*row2 하위*/
+.miniroom-pic {
+    margin: 15px 0 -15px 0 ;
+    text-align: center;
+}
+
+/*메뉴 컨테이너 아이템: 클립*/
+.clip {
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: black;
+    color: white;
+    padding: 6px 6px 6px 8px;
+    margin: 5px 15px 5px 0px;
+    font-size: 0.8rem;
+}
+.clip:hover {
+    color: black;
+    background-color: rgb(177, 177, 177);
+    font-weight: bold;
+}
+/*링크 걸어도 글자에 밑줄 안쳐지게.*/
+.menu-container a {
+    text-decoration: none;
+}
+

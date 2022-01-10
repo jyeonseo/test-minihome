@@ -1,0 +1,188 @@
+body {
+    background-color: gray;
+    background-image: url(./images/pattern.png); 
+    background-size:100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+/*기본 폰트*/
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.bookcover {
+    position: relative;
+    width: 960px;
+    height: 660px;
+    margin: 200px auto;
+    background-color: #000000;
+    border-radius: 9px;
+    border: 1px solid #000000;
+}
+.bookdot {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    border: 2px dashed white;
+    border-radius: 9px;
+}
+.page {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    background-color: #eeeeee;
+    border-radius: 9px;
+    /*flex 설정*/
+    display: flex;
+    padding: 15px;
+    flex-flow: row wrap;
+    /* 아래의 두 줄을 줄여 쓴 것 */
+	/* flex-direction: row; 가로로 칸 만들기 */
+	/* flex-wrap: wrap; 넘치지 않게*/
+}
+/*page의 아이템 : profile-container(box,profile-title), 
+main-container(box, main-title, url), menu-container*/
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    flex: 0.4;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.menu-container {
+    flex: 0.15;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 0 0;
+}
+
+/*프로필 컨테이너, 메인 컨테이너 아이템*/
+.box {
+    background-color: white;
+    flex: 3;
+    border-radius: 10px;
+    border: 1px solid #cdcdcd;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    flex: 0.1;
+}/*css클래스명에 띄어쓰기를 쓴 경우 다중 선택자로 쓰일 수 있다.*/
+.profile-title {
+    text-align: center;
+    padding: 6px;
+    font-size: 0.7rem;
+}
+.main-title{
+    display: flex;
+    padding: 3px 0;
+    margin-top: -2px;
+    align-items: center;
+}
+
+.main-name {
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.main-url {
+    font-size: 0.8rem;
+    flex: 1;
+    text-align: right;
+}
+
+/*profile container .box에 있는 아이템: profile-pic, profile-messege, foot-name*/
+.profile-pic {
+    flex: 2;
+    padding: 0px;
+    margin: 30px 30px 0 30px;
+    text-align: center;
+}
+.profile-messege {
+    flex: 2;
+    margin: 0 30px 0 30px;
+    font-size: 0.8rem;
+    line-height: 150%;
+}
+.foot-name {
+    flex: 0;
+    font-size: 0.8rem;
+    margin: 50px 30px 0 30px;
+}
+
+/*파도타기 드롭다운 기능*/
+.dropdown {
+    position: relative;
+    flex: 0;
+    border: 1px solid #000000;
+    padding: 5px;
+    font-size: 0.8rem;
+    margin: 10px 30px 30px 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.semo {
+    width: 0;
+    height: 0;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+    border-top: 5px solid #000000;
+}
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+.dropbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+.dropdown-content > a {
+    display: block;
+    background-color: #f9f9f9;
+    padding: 6px;
+    color: black;
+    text-decoration: none;
+} 
+.dropdown-content > a:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+/*overflow 기본 스타일 고치기*/
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #949494;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+/*제목 제외 모든 콘텐츠/포스트 들어가는 부분*/
+.post {
+    /*임시css*/
+
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
